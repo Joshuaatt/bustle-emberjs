@@ -1,32 +1,25 @@
 <!doctype html>
 <html>
   <head>
+    <script src="libs/ember-handlebars-loader-0.0.2.js"></script>
     <script src="libs/ember-template-compiler-1.10.0.js"></script>
     <script src="libs/jquery-1.10.2.js"></script>
     <script src="libs/ember-1.10.0.debug.js"></script>
+
     <script src="bustle.js"></script>
+    <script src="router.js"></script>
+
+    <script src="controllers/headlines.js"></script>
+
+    <script>
+      EmberHandlebarsLoader.loadTemplates(['application', 'headlines']);
+    </script>
+
     <link rel="stylesheet" href="css/bootstrap.css"></script>
+    <link rel="stylesheet" href="css/styles.css"></script>
     <title>Bustle</title>
   </head>
   <body>
 
   </body>
 </html>
-
-
-<!-- To start, build a homepage with 4 sample headlines and photos hard-coded into
-the template and a nav bar on the top. For now, don't put any real links on the
-nav bar. -->
-
-<!-- Next, let users click on a headline or photo to view the full story. Keep the
-navbar showing. -->
-
-<!-- Now, on the Bustle homepage, notice that there is a "carousel" at the top, with
-arrows on either side; when you click an arrow, a new story moves to the center
-of the screen. Add this feature. Don't worry about the scrolling effect. -->
-
-<!-- When a user hovers their mouse over the social buttons in the upper right
-corner of the Bustle homepage, a little menu appears. Implement this same
-functionality, but only when a user clicks on the icons. (If you'd like to try
-to get it working with hover, you'll need to do something like
-{{action "toggleSocialIcons" on="mouseEnter"}}.) -->
